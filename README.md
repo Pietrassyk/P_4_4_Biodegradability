@@ -8,7 +8,16 @@ The Goal of this project is to use QSAR-Data (Quantitative Structure Ability Rel
 The dataset was provided by UCI. And can be found here:
 https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation
 
-## EDA
+## Explopratory Data Analysis (EDA)
+For EDA the Dat is split into the two target classes "degradable" and non "degradable" in order to find features with significant differences between the two groups.
+The most relevant Features being:
+
++ SpPosA_B(p)
++ HyWi_B(m)
++ C%
+
+![alt text](https://github.com/pietrassyk//common/images/icon48.png "SpPosA_B(p)")
+
 
 ## Feature Engineering
 
