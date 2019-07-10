@@ -8,7 +8,27 @@ import numpy as np
 def evaluate_classifier(y_test, y_pred, classes = ['Not Degradable', 'Degradable'], normalize=False):
     """
     This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
+    Normalization can be applied by setting `normalize=True`
+
+    Paramerters :
+    -------------
+    y_test : Numpy Array or Pandas DataFrame
+        True Values for the target
+
+    y_pred : Numpy Array or Pandas DataFrame
+        Predicted values for the target
+
+    classes : List of Strings
+        Labels for displaying 0 and 1 in the plot , optional
+
+    normalize : Bool
+        Whether or not to schow normalized vs absolute Values in the plot
+
+    Returns :
+    ---------
+    result_dict : Dictionary
+        Dictionary Containing accuracy, precission, sensitivity, f1 scores as floats and a list of the confusion matrix values
+        
     """
     cm = confusion_matrix(y_test,y_pred)
     if normalize:
@@ -90,7 +110,7 @@ def plot_coefs(X_train,model, return_nulls = True, legend = True):
 def compare_models(results_dict_list, names_list = None):
     """Compares different models and pliots the mectrics values.
 
-    Attributes
+    Parameters
     ----------
     results_dict_list : list of dictionaries
         List of multiple scoring metrics of a model as key value pairs in a dictionary.
