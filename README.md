@@ -16,7 +16,7 @@ The most relevant Features being:
 + HyWi_B(m)
 + C%
 
-![alt text](https://github.com/pietrassyk//common/images/icon48.png "SpPosA_B(p)")
+![alt text](https://github.com/Pietrassyk/P_4_4_Biodegradability/tree/master/Pictures/distritbution_plot_SpPosA_B(p).png "SpPosA_B(p)")
 
 
 ## Feature Engineering
