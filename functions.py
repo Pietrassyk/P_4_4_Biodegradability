@@ -51,10 +51,11 @@ def evaluate_classifier(y_test, y_pred, classes = ['Not Degradable', 'Degradable
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt),
                  horizontalalignment="center",
-                 color="white" if cm[i, j] > thresh else "black")
+                 color="white" if cm[i, j] > thresh else "black", fontsize = 13)
     plt.tight_layout()
     plt.ylabel('Actual')
     plt.xlabel('Predicted')
+    plt.grid(b=None)
     plt.show()
     
     acc = metrics.accuracy_score(y_test, y_pred)
@@ -102,7 +103,9 @@ def plot_coefs(X_train,model, return_nulls = True, legend = True):
     plot_coef.plot(kind = "bar")
     if legend:
         plt.legend()
+    plt.title("Feature Importance", fontdict = {"fontsize": 16})
     plt.show()
+
     if return_nulls:
         return plot_coef.loc[plot_coef.coeff ==0].index
     return plot_coef
