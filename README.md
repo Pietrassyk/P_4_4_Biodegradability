@@ -65,5 +65,5 @@ On an Industry Scale this model could be used to:
 + Model performs better than the datasets author’s model.
 + Using this model multiple profitable and sustainable applications are possible.
 
-The Slieshow Version of this Project can be found here:
+The Slideshow Version of this Project can be found here:
 https://docs.google.com/presentation/d/1vfoftgk9bQPBq6ZBiI38KFoI2lb7zBuYRb1dBCDa0EE/edit?usp=sharing
