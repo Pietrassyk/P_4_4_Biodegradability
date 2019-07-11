@@ -12,14 +12,13 @@ https://archive.ics.uci.edu/ml/datasets/QSAR+biodegradation
 For EDA the Dat is split into the two target classes "degradable" and non "degradable" in order to find features with significant differences between the two groups.
 Some of the most relevant features being:
 
-+ SpPosA_B(p)
-+ C%
+|Features provinding goo seperation |
+:---:
+| Normalized spectral positive sum from Burden
+![Burden](/Pictures/distritbution_plot_SpPosA_B(p).png "SpPosA_B(p)") |
 
-Normalized spectral positive sum from Burden
-![Burden](/Pictures/distritbution_plot_SpPosA_B(p).png "SpPosA_B(p)")
-
-Percentage of C-Atoms
-![C-Atoms](/Pictures/distribution_plot_C.png "Percentage of C-Atoms")
+| Percentage of C-Atoms
+![C-Atoms](/Pictures/distribution_plot_C.png "Percentage of C-Atoms") |
 
 ## Feature Engineering
 
