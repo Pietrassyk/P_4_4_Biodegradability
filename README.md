@@ -23,6 +23,7 @@ The findings from the EDA where then combined with my chemical backround knowled
 One of the features being the molecules functionality based on the number of heavy metal atoms (nHM).
 It is most likely that in degradable organic compounds there is only one heavy metal atom present (nHM =1) as a single central atom in a chemical complex bound. These complexes are found in every species. A good example of this beeing the dye hemoglobine found in our blood as shown in the figure below (in the middle part).
 If nHM exeeds one a compound will be either anorganic or of high toxicity and therefore lead to low biodegradability. (nHM >1)
+
 ![Molecule Functionality](/Pictures/Feature-Functionality.png "Molecule Functionality")|
 
 ## Model Selection
@@ -34,6 +35,7 @@ Starting with a logistic regression model as a baseline the following models whe
 5. Ensemble (cointaining models 2-5)
 
 <br>Each of these models where trainied on a set of only linear features and a set of linear features and polynomial features. Ultimately leading to the following metrics:
+
 ![Model Selection](/Pictures/ModelSelection.png "Model Selection")
 
 ## Final Model
