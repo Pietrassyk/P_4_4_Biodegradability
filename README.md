@@ -32,13 +32,43 @@ Starting with a logistic regression model as a baseline the following models whe
 3. KNN
 4. Random forrest
 5. Ensemble (cointaining models 2-5)
+<<<<<<< HEAD
+<br>Each of these models where trainied on a set of only linear features and a set of linear features and polynomial features. Ultimately leading to the following metrics:
+![Model Selection](/Pictures/ModelSelection.png "Model Selection")
+
+## Final Model
+From the overview above the logistic regression model is chosen, since it provides the overall best performance. After Hyperparameter tuning and crossvalidation the following results are achieved on the test set:
+
+![Final Scores](https://github.com/Pietrassyk/P_4_4_Biodegradability/blob/master/Pictures/Confucionmatrix_final%20Model.png "Final Scores")
+
+The overall model performance provides a good classification of the target `degradability`. The most import metric being the precision score. The obtained precision score states that using this model 85% of all compounds to be classified as `degradable` are truly degradable.
+
+Furthermore Sensitivity (81%) and Specificity are (92%) are higher than in the original model provided in the data source (both values being at around 80%).
+
+The nature of the logistic regression model lets us further investigate the relationship between the used features and the classification:
+
+![Feature Importance](https://github.com/Pietrassyk/P_4_4_Biodegradability/blob/master/Pictures/Feature_Importance.png "Feature Importance")
+
+## Application
+The OECD provides sufficient Data on Chemical Compounds, ready to be scraped for future Analysis. So this can be done to further improve model performance.
+
+On an Industry Scale this model could be used to:
+→ Create new biodegradable compounds based on the above Feature importance
+→ Run Lab tests on waste to determine whether it is compostable or not
+→ certify biodegradable products based on compound data
+=======
 Each of these models where trainied on a set of only linear features and a set of linear features and added polynomial features. Ultimately leading to the following performances:
 ![Model Selection](/Pictures/ModelSelection.png "Model Selection")
 
 ## Final Model
+>>>>>>> f5e2aa7c3e5f1c5b55034ce179b9d454e1348adb
 
-## Outlook
 
 ## Summary
+
++ Biodegradability of compounds can be classified  with a Logistic Regression Model at a precision of 86 % given basic QSAR-Data
++ Model performs better than the datasets author’s model.
++ Using this model multiple profitable and sustainable applications are possible.
+
 The Slieshow Version of this Project can be found here:
 https://docs.google.com/presentation/d/1vfoftgk9bQPBq6ZBiI38KFoI2lb7zBuYRb1dBCDa0EE/edit?usp=sharing
