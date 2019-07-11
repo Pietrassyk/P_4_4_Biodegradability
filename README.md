@@ -20,8 +20,8 @@ For EDA the data was split into the two target classes "degradable" and non "deg
 
 ## Feature Engineering
 The findings from the EDA where then combined with my chemical backround knowledge to create new features that help dividing the target classes.
-For an example one of the features being the molecules functionality based on the number of heavy metal atoms.
-It is most likely that in degradable organic compounds there is only one heavy metal atom present (nHM =1) as a single central atom in a chemical complex bound. These complexes are found in every species. A good example of this beeing the dye haemoglobine found in our blood as shown in the figure below (in the middle part).
+One of the features being the molecules functionality based on the number of heavy metal atoms (nHM).
+It is most likely that in degradable organic compounds there is only one heavy metal atom present (nHM =1) as a single central atom in a chemical complex bound. These complexes are found in every species. A good example of this beeing the dye hemoglobine found in our blood as shown in the figure below (in the middle part).
 If nHM exeeds one a compound will be either anorganic or of high toxicity and therefore lead to low biodegradability. (nHM >1)
 ![Molecule Functionality](/Pictures/Feature-Functionality.png "Molecule Functionality")|
 
@@ -32,10 +32,10 @@ Starting with a logistic regression model as a baseline the following models whe
 3. KNN
 4. Random forrest
 5. Ensemble (cointaining models 2-5)
-Each of these models where trainied on a set of only linear features and a set of linear features and polynomial features. Ultimately leading to the following metrics:
+Each of these models where trainied on a set of only linear features and a set of linear features and added polynomial features. Ultimately leading to the following performances:
+![Model Selection](/Pictures/ModelSelection.png "Model Selection")
 
-
-## Model Performance
+## Final Model
 
 ## Outlook
 
