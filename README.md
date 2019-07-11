@@ -32,7 +32,7 @@ Starting with a logistic regression model as a baseline the following models whe
 3. KNN
 4. Random forrest
 5. Ensemble (cointaining models 2-5)
-<<<<<<< HEAD
+
 <br>Each of these models where trainied on a set of only linear features and a set of linear features and polynomial features. Ultimately leading to the following metrics:
 ![Model Selection](/Pictures/ModelSelection.png "Model Selection")
 
@@ -53,16 +53,9 @@ The nature of the logistic regression model lets us further investigate the rela
 The OECD provides sufficient Data on Chemical Compounds, ready to be scraped for future Analysis. So this can be done to further improve model performance.
 
 On an Industry Scale this model could be used to:
-→ Create new biodegradable compounds based on the above Feature importance
-→ Run Lab tests on waste to determine whether it is compostable or not
-→ certify biodegradable products based on compound data
-=======
-Each of these models where trainied on a set of only linear features and a set of linear features and added polynomial features. Ultimately leading to the following performances:
-![Model Selection](/Pictures/ModelSelection.png "Model Selection")
-
-## Final Model
->>>>>>> f5e2aa7c3e5f1c5b55034ce179b9d454e1348adb
-
+- Create new biodegradable compounds based on the above Feature importance
+- Run Lab tests on waste to determine whether it is compostable or not
+- certify biodegradable products based on compound data
 
 ## Summary
 
