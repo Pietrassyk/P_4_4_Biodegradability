@@ -2,7 +2,7 @@
 Classifying biodegradability of compounds using QSAR Data
 
 ## Motivation
-The Goal of this project is to use QSAR-Data (Quantitative Structure Ability Relationship) from cemical Compounds and classify biodegradable and non biodegradable substances. Since compounds can last hundreds of years before being decomposed, degradability experiments will take time accordingly. This is where the approach of QSAR begins to shine. Just by looking at relatively quick to obtain molecular properties, the molecules behaviour (in this case biodegradability) can be estimated. Thus helping to ensure correct disposal of chemicals and saving the environment, while also reducing expensive longterm experiments.
+The Goal of this project is to use QSAR-Data (Quantitative Structure Ability Relationship) from chemical compounds and classify biodegradable and non biodegradable substances. Since compounds can last hundreds of years before being decomposed, degradability experiments will take time accordingly. This is where the approach of QSAR begins to shine. Just by looking at relatively quick to obtain molecular properties, the molecules behaviour (in this case biodegradability) can be estimated. Thus helping to ensure correct disposal of chemicals and saving the environment, while also reducing expensive longterm experiments.
 
 ## Dataset
 The dataset was provided by UCI. And can be found here:
@@ -27,7 +27,7 @@ If nHM exeeds one a compound will be either anorganic or of high toxicity and th
 ![Molecule Functionality](/Pictures/Feature-Functionality.png "Molecule Functionality")|
 
 ## Model Selection
-Starting with a logistic regression model as a baseline the following models where trained and testes after a train_test_split:
+Starting with a logistic regression model as a baseline the following models where trained and tested after a train_test_split:
 1. Logistic regression without penalty terms (base model)
 2. Logistic regression with lasso penalty
 3. KNN
